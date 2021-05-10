@@ -6,7 +6,7 @@ Django 3.1.5
 ## Getting started
 - Git clone
 - python manage.py runserver
-- open http://localhost:8000/api/ un browser
+- open http://localhost:8000/api/ in browser
 ### API description
 - Create\
 POST creates a new resource of the specified resource type. 
