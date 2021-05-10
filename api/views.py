@@ -10,7 +10,7 @@ from .models import Task
 def apiOverview(request):
     api_urls = {
         'List': '/task-list/',
-        'Detail View': '/task-detail/<str:pk>/',
+        'Detail View': '/task-detal/<str:pk>/',
         'Create': '/task-create/',
         'Update': '/task-update/<str:pk>/',
         'Delete': '/task-delete/<str:pk>/',
@@ -37,7 +37,7 @@ def taskCreate(request):
         serializer.save()
     return Response(serializer.data)
 
-@api_view(['POST'])
+@api_view(['PUT'])
 def taskUpdate(request, pk):
     task = Task.objects.get(id=pk)
     serializer = TaskSerializer(instance=task, data=request.data)
