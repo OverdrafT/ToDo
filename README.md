@@ -42,8 +42,9 @@ curl -X DELETE http://localhost:8000/api/task-delete/<id>
 Enjoy!
 
 ### Future improvements
-- Field validation
 - Return http codes in response
+- Add virtualenv support
+- Field validation
 - Change primary key to UID
 - Switch to the same url for each CRUD operation
 https://dev.to/enether/managing-restful-urls-in-django-rest-framework
