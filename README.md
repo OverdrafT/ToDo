@@ -26,19 +26,20 @@ curl -X GET http://localhost:8000/api/task-list/ | json_pp
 ```
 ### Retrieve todo item:
 ```
-curl -X GET http://localhost:8000/api/task-detal/<id> | json_pp
+curl -X GET http://localhost:8000/api/task-detail/<id> | json_pp
 
 ```
 ### Update todo item:
 ```
-%in progress%s
+curl -X PUT http://localhost:8000/api/task-update/<id> -d '{"title": "Pay the bill", "comleted": false}' -H "Content-Type: application/json"
+
 ```
 ### Delete todo item:
 ```
 curl -X DELETE http://localhost:8000/api/task-delete/<id>
 
 ```
-Enjoy
+Enjoy!
 
 ### Future improvements
 - Field validation
