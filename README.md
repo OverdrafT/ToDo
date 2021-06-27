@@ -1,5 +1,7 @@
 # ToDo service
 This is backend REST service for CRUD operations for TODO.
+## Here is a live demo of the app
+[Django ToDo app](http://95.217.158.152:8000/api/)
 ## Prerequisites
 Python 3.8.6 \
 Django 3.1.5
